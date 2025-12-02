@@ -1,14 +1,11 @@
-<!-- src/routes/+layout.svelte -->
-<script>
-	import posthog from 'posthog-js'
-	import { browser } from '$app/environment';
-	import { afterNavigate } from '$app/navigation';
+<script lang="ts">
+	import favicon from '$lib/assets/favicon.svg';
 
-	import '../app.css';
-
-	if (browser) {
-		afterNavigate(() => posthog.capture('$pageview'));
-	}
+	let { children } = $props();
 </script>
 
-<slot></slot>
+<svelte:head>
+	<link rel="icon" href={favicon} />
+</svelte:head>
+
+{@render children()}
