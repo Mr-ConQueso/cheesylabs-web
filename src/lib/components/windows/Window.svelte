@@ -1,8 +1,8 @@
 <script lang="ts">
-	export let title: string = "";
+	let { title = "", children, ...rest } = $props();
 </script>
 
-<div class="window">
+<div class="window" {...rest}>
 	<div class="topbar">
 		<div class="dots">
 			<span class="dot red"></span>
@@ -13,14 +13,14 @@
 	</div>
 
 	<div class="content">
-		<slot></slot>
+		{@render children?.()}
 	</div>
 </div>
 
 <style>
     .window {
         background: var(--background);
-        border: var(--border);
+        border: var(--border-big);
         border-radius: var(--radius);
         box-shadow: var(--shadow-big);
         overflow: hidden;
@@ -29,8 +29,8 @@
 
     .topbar {
         background: var(--primary);
-        padding: 0.75rem 1rem;
-        border-bottom: var(--border);
+        padding: 0.2rem 1rem;
+        border-bottom: var(--border-big);
         display: flex;
         align-items: center;
         gap: 1rem;
@@ -45,12 +45,13 @@
         width: 14px;
         height: 14px;
         border-radius: 50%;
-        border: var(--border);
+        border: var(--border-small);
+				box-shadow: var(--shadow-small);
     }
 
-    .red { background: #ff5f57; }
-    .yellow { background: #ffbd2e; }
-    .green { background: #27c93f; }
+    .red { background: var(--dark); }
+    .yellow { background: var(--light); }
+    .green { background: var(--light); }
 
     .content {
         padding: 1.5rem 2rem;

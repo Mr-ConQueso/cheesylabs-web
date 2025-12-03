@@ -1,10 +1,12 @@
 <script lang="ts">
-	export let label: string;
-	export let href: string | null = null;
+	let { href = null, children, ...rest }: {
+		href?: string | null;
+		children?: any;
+	} = $props();
 </script>
 
-<a class="btn" href={href ?? "#"}>
-	{label}
+<a class="btn" href={href ?? "#"} {...rest}>
+	{@render children?.()}
 	<span class="arrow">➜</span>
 </a>
 
@@ -15,7 +17,7 @@
         gap: 0.5rem;
         padding: 0.8rem 1.4rem;
         background: var(--light);
-        border: var(--border);
+        border: var(--border-big);
         border-radius: var(--radius);
         font-family: var(--font-h);
         color: var(--dark);

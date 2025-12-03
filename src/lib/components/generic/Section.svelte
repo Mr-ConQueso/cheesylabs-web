@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Title from '$lib/components/Title.svelte';
+	import Title from '$lib/components/generic/Title.svelte';
 
 	export let title: string = "";
 </script>

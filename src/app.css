@@ -22,9 +22,11 @@
 
     /* Window + Border styling */
     --radius: 20px;
-    --border: 4px solid var(--dark);
-    --shadow-big: 12px 12px 0 var(--dark);
-    --shadow-small: 6px 6px 0 var(--dark);
+    --border-big: 4px solid var(--dark);
+    --border-small: 2px solid var(--dark);
+    --shadow-big: 8px 8px 0 var(--dark);
+    --shadow-medium: 4px 4px 0 var(--dark);
+    --shadow-small: 2px 2px 0 var(--dark);
     --font-h1: "Standie", sans-serif;
     --font-body: "Fredoka", sans-serif;
 }
