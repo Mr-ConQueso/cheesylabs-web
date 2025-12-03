@@ -11,10 +11,11 @@
 		</div>
 		<div class="col">
 			<h4 class="footer-head">Sitemap</h4>
-			<a href="#">Home</a>
-			<a href="#services">Services</a>
-			<a href="#portfolio">Work</a>
-			<a href="#contact">Contact</a>
+			<a href="/#">Home</a>
+			<a href="/#services">Services</a>
+			<a href="/about">About</a>
+			<a href="/portfolio">Work</a>
+			<a href="/#contact">Contact</a>
 		</div>
 		<div class="col">
 			<h4 class="footer-head">Socials</h4>

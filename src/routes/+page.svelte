@@ -51,8 +51,6 @@
 	];
 </script>
 
-<Navbar />
-
 <main class="page-container">
 	<!-- ============================= -->
 	<!--          HERO SECTION         -->
@@ -231,8 +229,6 @@
 		</div>
 	</Section>
 </main>
-
-<Footer />
 
 <style>
     /* --- Global Layout --- */

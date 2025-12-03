@@ -6,10 +6,10 @@
 	}
 
 	const links = [
-		{ name: "Services", href: "#services" },
-		{ name: "About", href: "#about" },
-		{ name: "Work", href: "#portfolio" },
-		{ name: "Contact", href: "#contact" }
+		{ name: "Services", href: "/#services" },
+		{ name: "About", href: "/about" },
+		{ name: "Work", href: "/portfolio" },
+		{ name: "Contact", href: "/#contact" }
 	];
 </script>
 

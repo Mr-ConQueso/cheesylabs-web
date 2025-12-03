@@ -13,7 +13,7 @@
     .title {
         font-family: var(--font-h1);
         color: var(--primary);
-        text-shadow: var(--shadow-medium);
+        text-shadow: -3px 3px 0 var(--dark);
         margin: 1.5rem 0 1rem 0;
     }
 
