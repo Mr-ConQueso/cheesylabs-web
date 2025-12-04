@@ -1,5 +1,5 @@
 <script lang="ts">
-	import favicon from '/icons/favicon.svg?url';
+	import favicon from '/icons/favicon.svg';
 	import '../app.css';
 	import Navbar from '$lib/components/navigation/Navbar.svelte';
 	import Footer from '$lib/components/navigation/Footer.svelte';
@@ -9,6 +9,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>Cheesy Labs</title>
 </svelte:head>
 
 <Navbar />

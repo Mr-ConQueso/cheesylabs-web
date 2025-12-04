@@ -1,10 +1,8 @@
 <script lang="ts">
-	import Navbar from '$lib/components/navigation/Navbar.svelte';
 	import Window from '$lib/components/windows/Window.svelte';
 	import Title from '$lib/components/generic/Title.svelte';
 	import Button from '$lib/components/generic/Button.svelte';
 	import Section from '$lib/components/generic/Section.svelte';
-	import Footer from '$lib/components/navigation/Footer.svelte';
 
 	const features = [
 		{

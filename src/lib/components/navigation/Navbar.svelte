@@ -5,7 +5,7 @@
 		isMenuOpen = !isMenuOpen;
 	}
 
-	const links = [
+	const sitemap = [
 		{ name: "Services", href: "/#services" },
 		{ name: "About", href: "/about" },
 		{ name: "Work", href: "/portfolio" },
@@ -17,13 +17,13 @@
 	<div class="nav-container">
 		<!-- Logo Section -->
 		<a href="/" class="brand">
-			<div class="logo-box">CL</div>
+			<img class="logo" src="/icons/favicon.svg" alt="Logo" />
 			<span class="brand-name">Cheesy Labs</span>
 		</a>
 
 		<!-- Desktop Links -->
 		<div class="desktop-links">
-			{#each links as link}
+			{#each sitemap as link}
 				<a href={link.href}>{link.name}</a>
 			{/each}
 		</div>
@@ -37,7 +37,7 @@
 	<!-- Mobile Menu (Dropdown) -->
 	{#if isMenuOpen}
 		<div class="mobile-menu">
-			{#each links as link}
+			{#each sitemap as link}
 				<a href={link.href} onclick={() => (isMenuOpen = false)}>{link.name}</a>
 			{/each}
 		</div>
@@ -71,19 +71,10 @@
         color: var(--dark);
     }
 
-    .logo-box {
+		.logo {
         width: 40px;
         height: 40px;
-        background: var(--primary);
-        border: var(--border-big);
-        box-shadow: var(--shadow-small);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: var(--font-h1);
-        color: white;
-        font-size: 1.2rem;
-    }
+		}
 
     .brand-name {
         font-family: var(--font-h1);
