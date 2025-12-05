@@ -4,6 +4,8 @@
 	import Button from '$lib/components/generic/Button.svelte';
 	import Section from '$lib/components/generic/Section.svelte';
 
+	import { CONTACT_EMAIL } from '$lib/utils/constants.ts';
+
 	const features = [
 		{
 			title: 'Videogames',
@@ -214,7 +216,7 @@
 				<Window title="Info.txt" style="height: fit-content;">
 					<h3>Contact Details</h3>
 					<ul class="info-list">
-						<li>📧 hello@cheesylabs.com</li>
+						<li>📧 {CONTACT_EMAIL}</li>
 						<li>📞 +1 (555) 123-4567</li>
 						<li>📍 Madrid, Spain</li>
 					</ul>
